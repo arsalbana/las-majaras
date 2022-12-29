@@ -1,0 +1,160 @@
+.carroCompras{
+    
+
+    #shop{
+        text-decoration: none;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        padding:10%;
+        
+        
+        
+        
+        li{
+            text-align: center;
+            list-style: none;
+            box-sizing: border-box;
+            background-color: rgb(231, 223, 236);
+            padding-top: 10%;
+            padding-bottom: 10%;
+            border-radius: 5%;
+            
+            
+          
+        }
+        a{
+           
+            text-decoration: none;
+            color: #24123a;
+            
+            
+        }
+        .card1{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            gap: 15px;
+            
+
+            
+        }
+        .card2{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            gap: 15px;
+
+            
+        }
+      
+    }
+   
+}
+
+
+#info-table{
+    width: 100%;
+    
+    
+    h5{
+        color: #24123a;
+    }
+    th{
+        color: #24123a;
+        
+    }
+    background-color: #d6fccb;
+    text-align: center;
+    font-size: 1em;
+    
+    .selectOne button{
+        width: .5em;
+        gap: 5px;
+        
+    
+    }
+    .reduce{
+        color: #24123a;
+        width: 3em;
+        font-size: 1em;
+        box-sizing: border-box;
+        
+    }
+    .btdelete{
+        padding: 10%;
+    }
+    .delete{
+        font-size: 0em;
+    }
+    .shopCount{
+        color: #24123a;
+        padding: 5%;
+        
+    }
+    a{
+        text-decoration: none;
+        color: #24123a;
+    }
+    
+}
+
+
+#info-input{
+    background-color: #d6fccb;
+    width: 100%;
+    margin: 0px auto;
+    padding: 10%;
+    .total-div{
+        text-align: right;
+        font-size: 1em;
+    }
+    .btdelete{
+        float: left;
+        font-size: 1em;
+    }
+    .btorinter-div{
+        height: auto;overflow: auto;}
+        font-size: 1em;
+    .viewIntegral{
+        float: right;
+        font-size: 1em;
+    }
+    .btbuy{
+        background-color: #24123a;
+        color: white;
+        border: 1px;
+        float: right;
+        font-size: 1em;
+        
+    }
+    #resultTotalMoney,#integralTotal{
+        color: #24123a;
+        font-size: 1em;
+    }
+}
+
+
+
+
+
+.price{
+    color: #24123a;
+}
+
+  
+.texto1{
+    .letratexto{
+        font-size: 1.5em;
+        color: #24123a;
+    }
+}   
+
+@media screen and (max-width:768px){
+    .price{
+        color: #24123a;
+    }
+}   

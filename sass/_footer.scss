@@ -1,0 +1,195 @@
+$hamburger-BG: #24123a;
+.footer{
+        width: 100%;
+        background-color: $hamburger-BG;   
+        font-size: 0.8em;
+        font-family: 'Nunito sans', sans-serif;
+        text-decoration: none;
+        justify-content: space-around;
+        justify-items: center;
+        padding: 5%;
+ 
+        .contenedorFooter{
+            a:link{
+                text-decoration: none;
+                color: rgb(255, 255, 255);
+            }
+            a:visited{
+                text-decoration: none;
+                color: rgb(187, 187, 187);
+            }
+            a:hover{
+                text-decoration: none;
+                color: rgb(130, 255, 125);
+            }
+            a:active{
+                text-decoration: none;
+                color: rgb(130, 255, 125);
+            }
+            
+            .dg{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-content: center;
+                align-items: center;
+                width: 100%;
+                height: auto;
+                gap: 20px;
+                
+
+                    
+                .foo0{
+                    
+                    width: 80%;
+                    height: auto;
+                    align-self: center;
+                    
+                    img{
+                        background-color: #24123a;;
+                        padding: 7%;
+                    }
+                }
+                .foo1{
+                    display: flex;
+                    flex-flow: row;
+                    flex-direction: row;
+                    align-items: center;
+                    width: 55%;
+                    height: auto;
+                    gap: 1.5em;
+                    
+                    
+                    img{
+                        
+                        width: 100%;
+                        height: auto;
+                        background-color: #24123a;;
+                        padding: 32%;
+                    }
+                }
+            }
+            
+            .foo{
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                padding: 5%;
+                align-items: center;
+                justify-content: space-evenly;
+            }
+          
+        }
+        
+    
+    }
+    @media screen and (max-width:768px){
+        .footer{
+            .contenedorFooter{
+                .dg{
+                    display: flex;
+                    flex-direction: column;
+                    .foo0{
+                        width: 20%;
+                        img{
+                            width: 60%;
+                            padding: 10%;
+                            height: 60%;
+                            min-width: 40px;
+                            min-height: 40px;
+                          
+                          
+                        }
+                        
+                        img{
+                            background-color: #24123a;;
+                            
+                        }
+                    }
+                    .foo1{
+                        
+                        width: 50%;
+                        height: auto;
+                        display: flex;
+                        flex-direction: row;
+                        padding-left: 2%;
+                    
+                        img{
+                            background-color: #24123a;;
+                            width: 60%;
+                            padding: 10%;
+                            height: 60%;
+                            min-width: 3vw;
+                            min-height: 2.5vh;
+                            
+                        }
+                    }
+                }
+                
+                .foo{
+                    display: flex;
+                    flex-direction: row;
+                    width: 100%;
+                    align-items: center;
+                    justify-content: space-between;
+                    font-size: .8em;
+                }
+                
+            }
+        }
+    }
+    @media screen and (max-width:495px){
+        .footer{
+            .contenedorFooter{
+                .dg{
+                    display: flex;
+                    flex-direction: column;
+                    .foo0{
+                        
+                        width: 20%;
+                    
+                        img{
+                            width: 75%;
+                            padding: 10%;
+                            height: 75%;
+                            min-width: 40px;
+                            min-height: 40px;
+                          
+                          
+                        }
+                    }
+                    .foo1{
+                        display: flex;
+                        flex-direction: row;
+                        width: 80%;
+                        height: auto;
+                        padding-left: 9%;
+                      
+                        img{
+                       
+                            width: 60%;
+                            padding: 10%;
+                            height: 60%;
+                            min-width: 3vw;
+                            min-height: 2.5vh;
+                          
+                        }
+                    }
+
+                }
+
+                
+                .foo{
+                    display: flex;
+                    flex-direction: row;
+                    width: 100%;
+                    height: auto;
+                    align-items: center;
+                    justify-content: space-between;
+                    font-size: 1em;
+                }
+                
+            }
+        }
+    }
+  

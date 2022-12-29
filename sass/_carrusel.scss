@@ -1,0 +1,87 @@
+
+.carrousel{
+width: 100%;
+max-width: 120em;
+background-color: rgb(255, 255, 255);
+overflow: hidden;
+margin: 1em;
+align-content: center;
+top: 7em;
+}
+.carrousel .grande{
+    width: 400%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    transition: all .5s ease;
+    transform: translateX(0%);
+    box-shadow: gray;
+    color: honeydew;
+    box-shadow: .2vw;
+    top: 7em;
+}
+.carrousel .img{
+    width: 25%;
+    background-color: white;
+    color: whitesmoke;
+}
+img{
+    width: calc(100% / 4);
+    min-height: 10vh;
+    background-color: whitesmoke;
+    
+}
+
+.carrousel .puntos{
+    width: 100%;
+    background-color: rgb(185, 185, 185);
+    padding: .4em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: .2em;
+    line-height: 2rem;
+    background-color: rgb(255, 255, 255);
+    color: aliceblue;
+}
+.carrousel .punto{
+    
+    width: 1.5em;
+    height: 1.5em;
+    margin: .2em;
+    margin: 1em 1em 0;
+    background-color: rgb(66, 3, 63);
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    border-radius: 50%;
+    a:hover{
+        cursor: pointer;
+        transform: scale(1.2, 1.2, 1.2, 1.2);
+        color: rgb(66, 3, 63);
+        border-radius: 50%;
+
+    }
+    
+}
+.carrousel .punto.activo{
+    background-color: blueviolet;
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    box-shadow: 1in;
+    
+}
+@media screen and (max-width:768px){
+    .carrousel{
+        padding: 5%;
+        top: 25em;
+        }
+        .carrousel .grande{
+            
+            padding-top: 22%;
+        }
+}
