@@ -162,7 +162,7 @@
 					td1.innerHTML = '<input type="checkbox"  class="selectOne" />';
 					var td2 = document.createElement("td");
 					td2.className = "imgbackground";
-					td2.innerHTML = '<img src="'+ shop.shopImg +'" height="100" width="100"/>';
+					td2.innerHTML = '<img src="'+ shop.shopImg +'" height="auto" width="100"/>';
 					var td3 = document.createElement("td");
 					td3.className = "integral";
 					td3.innerHTML = shop.shopIntegral;

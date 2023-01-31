@@ -278,68 +278,148 @@ img {
   .carrousel .grande {
     padding-top: 22%; } }
 
-.carroCompras #shop {
-  background-color: silver;
-  text-decoration: none;
-  padding-top: 10%;
-  text-align: center; }
-  .carroCompras #shop li {
+.carroCompras {
+  width: 100%; }
+  .carroCompras #shop {
+    text-decoration: none;
     text-align: center;
-    list-style: none; }
-  .carroCompras #shop a {
-    text-decoration: none; }
-  .carroCompras #shop .card1 {
-    display: inline-block;
-    width: 100%;
-    height: 100%; }
-  .carroCompras #shop .card2 {
-    display: inline-block;
-    width: 100%;
-    height: 100%; }
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    padding: 10%;
+    font-size: medium; }
+    .carroCompras #shop li {
+      text-align: center;
+      list-style: none;
+      box-sizing: border-box;
+      background-color: #fcfcfc;
+      padding-top: 5%;
+      padding-bottom: 5%;
+      border-radius: 5%;
+      box-shadow: -5px -5px 5px #e4e4e4;
+      border-color: #e4e4e4;
+      font-size: 1rem; }
+      .carroCompras #shop li a {
+        text-decoration: none;
+        color: #24123a; }
+        .carroCompras #shop li a .foto {
+          width: 100%;
+          height: auto;
+          padding: 5%; }
+    .carroCompras #shop .card1 {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      gap: 15px; }
+      .carroCompras #shop .card1 h6 {
+        font-size: medium; }
+    .carroCompras #shop .card2 {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      gap: 15px; }
+      .carroCompras #shop .card2 h6 {
+        font-size: medium; }
+  .carroCompras .texto1 .letratexto {
+    font-size: 1em;
+    color: #24123a; }
 
 #info-table {
+  background-color: #f5fff2;
+  padding-top: 5%;
+  box-shadow: -5px -5px 5px #e4e4e4;
   text-align: center;
-  font-size: 1em;
-  padding: 2%; }
+  font-size: 1em; }
+  #info-table h5 {
+    color: #24123a; }
+  #info-table th {
+    color: #24123a; }
   #info-table .selectOne button {
     width: .5em;
-    gap: 5px;
-    padding: 10%; }
+    gap: 5px; }
   #info-table .reduce {
     color: #24123a;
-    width: 20px; }
+    width: 3em;
+    font-size: 1em;
+    box-sizing: border-box; }
+  #info-table .btdelete {
+    padding: 10%; }
+  #info-table .delete {
+    font-size: 0em; }
   #info-table .shopCount {
-    color: #24123a; }
+    color: #24123a;
+    padding: 5%; }
   #info-table a {
     text-decoration: none;
     color: #24123a; }
 
 #info-input {
+  background-color: #f5fff2;
   width: 100%;
   margin: 0px auto;
-  padding: 10%; }
+  padding: 10%;
+  font-size: 1em; }
   #info-input .total-div {
-    text-align: right; }
+    text-align: right;
+    font-size: 1em; }
   #info-input .btdelete {
-    float: left; }
+    float: left;
+    font-size: 1em; }
   #info-input .btorinter-div {
     height: auto;
     overflow: auto; }
   #info-input .viewIntegral {
-    float: right; }
+    float: right;
+    font-size: 1em; }
   #info-input .btbuy {
     background-color: #24123a;
     color: white;
     border: 1px;
-    float: right; }
+    float: right;
+    font-size: 1rem;
+    width: 20%;
+    height: 30px;
+    border-radius: 10%;
+    text-align: center; }
   #info-input #resultTotalMoney, #info-input #integralTotal {
-    color: #24123a; }
+    color: #24123a;
+    font-size: 1em; }
 
 .price {
   color: #24123a; }
 
+.texto1 .letratexto {
+  font-size: 3em;
+  color: #24123a; }
+
 @media screen and (max-width: 768px) {
   .price {
+    color: #24123a; }
+  #shop {
+    gap: 5px;
+    padding: 10%; }
+    #shop li {
+      font-size: 1rem; }
+      #shop li a {
+        font-size: small; }
+    #shop .card1 {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      gap: 10px;
+      font-size: medium; }
+    #shop .card2 {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      gap: 10px;
+      font-size: medium; }
+  .texto1 .letratexto {
+    font-size: 1em;
     color: #24123a; } }
 
 * {
@@ -352,7 +432,7 @@ body {
   body main {
     background: url(../img/foto.jpg);
     max-width: 100%;
-    width: 60%;
+    width: 100%;
     margin: auto;
     padding: 40px;
     align-content: center;

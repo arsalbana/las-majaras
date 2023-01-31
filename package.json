@@ -1,0 +1,19 @@
+{
+  "name": "entrega-javascript-main",
+  "version": "1.0.0",
+  "description": "-Menú  con js -Carrusel con js -Carrito de compras con js -Formulario de validación con js -sweat alert",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss sass/style.scss css/nuevo.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.20",
+    "sweetalert": "^2.1.2"
+  },
+  "devDependencies": {}
+}

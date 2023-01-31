@@ -1,4 +1,5 @@
 .carroCompras{
+    width: 100%;
     
 
     #shop{
@@ -11,35 +12,44 @@
         
         
         
-        
         li{
             text-align: center;
             list-style: none;
             box-sizing: border-box;
-            background-color: rgb(231, 223, 236);
-            padding-top: 10%;
-            padding-bottom: 10%;
+            background-color: rgb(252, 252, 252);
+            padding-top: 5%;
+            padding-bottom: 5%;
             border-radius: 5%;
+            box-shadow: -5px -5px 5px #e4e4e4;
+            border-color: #e4e4e4;
             
+            a{
+           
+                text-decoration: none;
+                color: #24123a;
+                .foto{
+                    width: 100%;
+                    height: auto;
+                    padding: 5%;
+                    
+                }
+                
+                
+            }
             
           
         }
-        a{
-           
-            text-decoration: none;
-            color: #24123a;
-            
-            
-        }
+       
         .card1{
             display: flex;
             flex-direction: column;
             width: 100%;
             height: 100%;
             gap: 15px;
-            
-
-            
+            .titulos{
+                font-size: 1.3rem;
+            }
+             
         }
         .card2{
             display: flex;
@@ -47,27 +57,32 @@
             width: 100%;
             height: 100%;
             gap: 15px;
-
-            
+            .titulos{
+                font-size: 1.3rem;
+            }
+           
         }
       
     }
+   
    
 }
 
 
 #info-table{
-    width: 100%;
     
-    
-    h5{
+    .carritoTitulo{
         color: #24123a;
+        font-size: .8em;
     }
     th{
         color: #24123a;
         
+        
     }
-    background-color: #d6fccb;
+    background-color: #f5fff2;
+    padding-top: 5%;
+    box-shadow: -5px -5px 5px #e4e4e4;
     text-align: center;
     font-size: 1em;
     
@@ -104,9 +119,10 @@
 
 
 #info-input{
-    background-color: #d6fccb;
+    background-color: #f5fff2;
     width: 100%;
     margin: 0px auto;
+    
     padding: 10%;
     .total-div{
         text-align: right;
@@ -114,11 +130,19 @@
     }
     .btdelete{
         float: left;
-        font-size: 1em;
+            font-size: 1em;
+            width: 30%;
+            height: 20px;
+            border-radius: 10%;
+            text-align: center;
+            background-color: #24123a;
+            color: white;
+            border: 1px;
     }
     .btorinter-div{
-        height: auto;overflow: auto;}
+        height: auto;overflow: auto;
         font-size: 1em;
+    }
     .viewIntegral{
         float: right;
         font-size: 1em;
@@ -128,7 +152,12 @@
         color: white;
         border: 1px;
         float: right;
-        font-size: 1em;
+        font-size: 1rem;
+        width: 20%;
+        height: 30px;
+        border-radius: 10%;
+        text-align: center;
+        
         
     }
     #resultTotalMoney,#integralTotal{
@@ -156,5 +185,109 @@
 @media screen and (max-width:768px){
     .price{
         color: #24123a;
+    }
+    #shop{
+        
+        gap: 5px;
+        padding:10%;
+        
+        li{
+            font-size: small;
+            
+            a{
+                font-size: small;
+            }
+          
+        }
+       
+        .card1{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            gap: 10px;
+            .titulos{
+                font-size: 1em;
+            }
+          
+        }
+        .card2{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            gap: 10px;
+            .titulos{
+                font-size: 1rem;
+            }
+
+            
+        }
+      
+    }
+    .texto1{
+        .letratexto{
+            font-size: 1.6em;
+            color: #24123a;
+        }
+    } 
+    #info-table{
+    
+        .carritoTitulo{
+            color: #24123a;
+            font-size: 1.3em;
+        }
+        th{
+            color: #24123a;
+            
+            
+        }
+        background-color: #f5fff2;
+        padding-top: 5%;
+        box-shadow: -5px -5px 5px #e4e4e4;
+        text-align: center;
+        font-size: .8em;
+    } 
+    #info-input{
+        background-color: #f5fff2;
+        width: 100%;
+        margin: 0px auto;
+        
+        padding: 10%;
+        .total-div{
+            text-align: right;
+            font-size: .9em;
+        }
+        .btorinter-div{
+            height: auto;overflow: auto;
+            font-size: 1em;
+        }
+        .btdelete{
+            float: left;
+            font-size: .7rem;
+            width: 30%;
+            height: 20px;
+            border-radius: 10%;
+            text-align: center;
+            background-color: #24123a;
+            color: white;
+            border: 1px;
+
+        }
+        .btbuy{
+            background-color: #24123a;
+            color: white;
+            border: 1px;
+            float: right;
+            font-size: .7rem;
+            width: 30%;
+            height: 20px;
+            border-radius: 10%;
+            text-align: center;
+            
+            
+        }
+        
+        
     }
 }   
